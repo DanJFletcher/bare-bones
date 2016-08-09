@@ -11,7 +11,18 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0"
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-html": "^0.4.4",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-minify": "0.0.14",
+    "gulp-order": "^1.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-strip-comments": "^2.4.3"
   },
   "dependencies": {
     "express": "^4.13.4"

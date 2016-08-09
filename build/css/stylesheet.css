@@ -1,100 +1,76 @@
 /*RESET*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  -webkit-appearance: none;
+  outline: none; }
 
-	* {
-		box-sizing: border-box;
-		padding: 0;
-		margin: 0;
-		text-decoration: none;
-		color: inherit;
-		-webkit-appearance: none;
-		outline: none;
-	}
+.clear {
+  clear: both; }
 
-	.clear {
-		clear: both;
-	}
+.full {
+  width: 100%; }
 
-	.full {
-		width: 100%;
-	}
-
-	.center {
-		width: 65%;
-		margin: 0 auto;
-	}
+.center {
+  width: 65%;
+  margin: 0 auto; }
 
 /*HEADER*/
+#header-contact {
+  background: #2f9194;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12pt;
+  color: white;
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
-	#header-contact {
-		background: #2f9194;
-		font-family: "Open Sans", sans-serif;
-		font-size: 12pt;
-		color: white;
-		text-align: right;
-		padding-top: 5px;
-		padding-bottom: 5px;
-	}
+#header-menuholder {
+  background: #40c1c6;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
-	#header-menuholder {
-		background: #40c1c6;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
+#header-logo {
+  width: 100px;
+  float: left; }
 
-	#header-logo {
-		width: 100px;
-		float: left;
-	}
+#header-logo img {
+  max-width: 100%; }
 
-	#header-logo img {
-		max-width: 100%;
-	}
+#header-menu {
+  width: calc(100% - 300px);
+  float: left; }
 
-	#header-menu {
-		width: calc(100% - 300px);
-		float: left;
-	}
+.header-menuitem {
+  width: 20%;
+  float: left;
+  font-family: "Oswald", sans-serif;
+  font-size: 14pt;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 15px;
+  text-align: right;
+  -webkit-transition: .25s ease all;
+  transition: .25s ease all;
+  cursor: pointer; }
 
-	.header-menuitem {
-		width: 20%;
-		float: left;
-		font-family: "Oswald", sans-serif;
-		font-size: 14pt;
-		color: white;
-		text-transform: uppercase;
-		padding-top: 15px;
-		text-align: right;
-		transition: .25s ease all;
-		cursor: pointer;
-	}
-
-	.header-menuitem:hover {
-		color: #2f2f2f;
-		transition: .25s ease all;
-	}
+.header-menuitem:hover {
+  color: #2f2f2f;
+  -webkit-transition: .25s ease all;
+  transition: .25s ease all; }
 
 /*MEDIA QUERIES*/
+@media (max-width: 1400px) {
+  .center {
+    width: 75%; } }
 
-	@media (max-width: 1400px) {
+@media (max-width: 1000px) {
+  .center {
+    width: 85%; } }
 
-		.center {
-			width: 75%;
-		}
-
-	}
-
-	@media (max-width: 1000px) {
-
-		.center {
-			width: 85%;
-		}
-
-	}
-
-	@media (max-width: 600px) {
-
-		.center {
-			width: 95%;
-		}
-
-	}
+@media (max-width: 600px) {
+  .center {
+    width: 95%; } }
