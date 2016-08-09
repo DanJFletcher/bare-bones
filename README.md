@@ -1,5 +1,17 @@
 # beard-pack
-Very simple set up for building static web pages.
+A decent starting point for building static websites.
+
+## The purpose
+This setup handles monotonous tasks such as HTML validation, CSS vendor prefixing, image compression, minification and more. When developing a project with `beard-pack` you will have 3 main directories in your project.  
+
+1. `src` The src directory is where all code edits take place. This is where you will create new files, add assets like icons and images, and everything else you normally do when building a static website.
+2. 'build' The build is the result of running a build tool called `gulp`. After things like vendor prefixes, SASS compilation, HTML validation etc has all been done, all of the src files are stored inside of `build` and this is where you will point your server. Example: in XAMPP you'll likely have a path like `localhost/<document_root>/<name_of_project>/build` where `document_root` is the path you configure for XAMPP, and `name_of_project` is the name of your project - which will just be `beard-pack` if you didn't specify a name when running `git clone`.
+3. `dist` Is the result of minifying all source files so that the file sizes are reduced for faster load times. In typical build systems, CSS and JS is often concatenated into a single file - in this setup, CSS is concatenated before being set to the build folder. The contents of `dist` is what gets uploaded to the `public_html` directory on a live production server.
+
+### Recap
+- `src` is where development takes place.
+- `build` is used for debugging purposes. It contains code that has been compiled, prefixed and potentially other processing. It's sometimes necassary to be able to view this code, and so the `build` files are not minified, so that they can be read/debugged by a developer.
+- `dist` is the final stage in the workflow. These files are completely compressed and unreadable. No developer should ever set eyes on the contents within. It's for computers only ;)
 
 ## Set up
 ### Requirements
@@ -8,12 +20,13 @@ You will need the following installed on your local machine:
 - Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 - Node: https://docs.npmjs.com/getting-started/installing-node
 - npm (included with Node): update with `npm install npm -g` or `sudo npm install npm -g` on Linux
+- gulp installed globally: `npm install -g gulp`
 
 ### tl;dr
-1. `git clone https://DanJFletcher@bitbucket.org/reddingdesigns/beard-pack.git`
+1. `git clone https://DanJFletcher@bitbucket.org/reddingdesigns/beard-pack.git <name-of-project>`
 2. `cd beard-pack`
 3. `npm install`
-4. `npm start`
+4. `np
 5. Separate terminal: `gulp`
 6. View at `localhost:8080`
 
