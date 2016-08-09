@@ -32,14 +32,14 @@ var plugins = require("gulp-load-plugins")({
 
 // Minifies JS Files
 gulp.task('compress-js', function() {
-  gulp.src('src/js/*.js')
+  gulp.src('build/js/**/*.js')
     .pipe(plugins.minify({
         ext:{
             src:'.js',
             min:'.min.js'
         }
     }))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist/js'))
 });
  
  
@@ -54,6 +54,13 @@ gulp.task('dist-vendor-css', function() {
     return gulp.src('build/vendor/**/*.css')
     .pipe(gulp.dest('dist/vendor'))
 })
+
+// Put JS in build
+gulp.task('build-js', function() {
+    return gulp.src('src/js/**/*.js')
+    .pipe(gulp.dest('build/js'))
+})
+
 
 // Put JS libs in build
 gulp.task('build-vendor-js', function() {
@@ -125,7 +132,8 @@ gulp.task('dist', [
         'minify-css', 
         'dist-images',
         'dist-vendor-css',
-        'dist-vendor-js'
+        'dist-vendor-js',
+        'compress-js'
     ]);
 
 // Default Task
@@ -134,5 +142,6 @@ gulp.task('default', [
         'html', 
         'images', 
         'build-vendor-css',
-        'build-vendor-js'
+        'build-vendor-js',
+        'build-js'
     ]);
