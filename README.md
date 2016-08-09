@@ -25,12 +25,17 @@ You will need the following installed on your local machine:
 - gulp installed globally: `npm install -g gulp`
 
 ### tl;dr
+#### On Node
 1. `git clone https://DanJFletcher@bitbucket.org/reddingdesigns/beard-pack.git <name-of-project>`
 2. `cd beard-pack`
 3. `npm install`
-4. `np
-5. Separate terminal: `gulp`
+4. `gulp watch`
+(For Node)  
+5. `node index.js` Alternatively: `nodemon index.js` Must install with: `npm i -g nodemon`
 6. View at `localhost:8080`
+(For XAMPP)  
+5. Start server and visit your localhost at your document_root. If it's not set, it'll be `localhost/htdocs/path/to/project`
+
 
 ### Detailed Steps
 1. Open terminal and `cd` to where you wish to create the projects' directory.
