@@ -1,6 +1,8 @@
 # beard-pack
 A decent starting point for building static websites.
 
+If you have any questions about this build, issues setting up, or would like to suggest features, please submit an issue through the project's issue tracker.
+
 ## The purpose
 This setup handles monotonous tasks such as HTML validation, CSS vendor prefixing, image compression, minification and more. When developing a project with `beard-pack` you will have 3 main directories in your project.  
 
@@ -10,7 +12,7 @@ This setup handles monotonous tasks such as HTML validation, CSS vendor prefixin
 
 ### Recap
 - `src` is where development takes place.
-- `build` is used for debugging purposes. It contains code that has been compiled, prefixed and potentially other processing. It's sometimes necassary to be able to view this code, and so the `build` files are not minified, so that they can be read/debugged by a developer.
+- `build` is used for debugging purposes. It contains code that has been compiled, prefixed and potentially other processing. It's sometimes necessary to be able to view this code, and so the `build` files are not minified, so that they can be read/debugged by a developer.
 - `dist` is the final stage in the workflow. These files are completely compressed and unreadable. No developer should ever set eyes on the contents within. It's for computers only ;)
 
 ## Set up
