@@ -1,1 +1,46 @@
-node_modules
+
+# Gitignore specifies intentionally untracked files to ignore by git.
+# See the documentation here:
+# https://help.github.com/articles/ignoring-files/
+
+# .DS_Store is created by OS X and stores custom metadata. 
+# hese files are hidden on OS X but will show up for Windows and Linux users.
+.DS_Store
+
+# Thumbs.db is similar to DS_Store, mainly used for thumbnail cache.
+Thumbs.db
+
+# npm-debug.log is created whenever npm encounters an issue 
+# (it could be an issue with package.json or internet disconnection). 
+# You should definitely ignore this file because it bloats your git revision 
+# history and might cause conflicts if several developers commit it.
+npm-debug.log
+
+# bower_components folder stores bower’s downloaded packages. 
+# Check the linked article on why and how you should exclude bower_components 
+# from your source control.
+# 
+# https://www.codementor.io/bower/tutorial/beginner-tutorial-getting-started-bower-package-manager
+/bower_components
+
+# node_modules folder stores npm’s downloaded packages. These packages 
+# tend to have VERY large sizes and should definitely be excluded from git.
+/node_modules
+
+# vendor folder stores packages downloaded by Composer. These packages should 
+# be excluded and every developer should maintain his/her own copy of vendor 
+# packages. Only the composer.json and composer.lock files should be committed.
+/vendor
+
+# The build folder is created from our task runner Gulp.
+# It is were compiled SASS files, vendor-prefixed CSS properties, and a hord
+# of other processed files will go. There is no reason for this to be in the
+# Git repo, since the build folder is built from the src folder.
+/build
+
+# Another folder created from our task runner Gulp.
+# This folder is the minified and compressed version of the source code. It's 
+# the version that is distributed to the final homestead on a live production
+# server.
+/dist
+
