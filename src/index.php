@@ -5,7 +5,7 @@
  */
  
  // Requires/Includes go here.
- require('env.php');
+ require('../env.php');
  
  // Generate the header markup
  include('header.php');

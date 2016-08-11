@@ -9,7 +9,7 @@
  */
 
 // Require Dependancies here
-require('env.php');
+require('../env.php');
 
 ?>
 
