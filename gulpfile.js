@@ -128,7 +128,7 @@ gulp.task('dist-php', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('scss/*.scss', ['sass', 'html']);
+    gulp.watch(['src/**/*'], ['default']);
 });
 
 // Build Distrobution Folder
