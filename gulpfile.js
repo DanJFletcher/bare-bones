@@ -32,14 +32,14 @@ var plugins = require("gulp-load-plugins")({
 
 // Minifies JS Files
 gulp.task('compress-js', function() {
-  gulp.src('build/js/**/*.js')
+  gulp.src('src/js/*.js')
     .pipe(plugins.minify({
         ext:{
             src:'.js',
             min:'.min.js'
         }
     }))
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('dist'))
 });
  
  
@@ -54,13 +54,6 @@ gulp.task('dist-vendor-css', function() {
     return gulp.src('build/vendor/**/*.css')
     .pipe(gulp.dest('dist/vendor'))
 })
-
-// Put JS in build
-gulp.task('build-js', function() {
-    return gulp.src('src/js/**/*.js')
-    .pipe(gulp.dest('build/js'))
-})
-
 
 // Put JS libs in build
 gulp.task('build-vendor-js', function() {
@@ -121,6 +114,18 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('build/css/'));
 });
 
+// Move php files into build
+gulp.task('build-php', function() {
+    return gulp.src('src/*.php')
+        .pipe(gulp.dest('build'));
+});
+
+// Move php files into dist
+gulp.task('dist-php', function() {
+    return gulp.src('build/*.php')
+        .pipe(gulp.dest('dist'));
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('scss/*.scss', ['sass', 'html']);
@@ -133,7 +138,7 @@ gulp.task('dist', [
         'dist-images',
         'dist-vendor-css',
         'dist-vendor-js',
-        'compress-js'
+        'dist-php'
     ]);
 
 // Default Task
@@ -143,5 +148,5 @@ gulp.task('default', [
         'images', 
         'build-vendor-css',
         'build-vendor-js',
-        'build-js'
+        'build-php'
     ]);
