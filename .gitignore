@@ -44,8 +44,8 @@ npm-debug.log
 # server.
 /dist
 
-# config.php is a file that is used for environment setup.
+# env.php is a file that is used for environment setup.
 # Including this in the repository only overrides dev settings. Only the
-# example.config.php should be kept
-config.php
+# example.env.php should be kept
+env.php
 
