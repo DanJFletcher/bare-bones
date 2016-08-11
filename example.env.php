@@ -14,4 +14,6 @@
  // Example: http://www.beardreview.ca/familyCentral
  const SITE_URL = "localhost/w-enterprise/beard-pack";
  
- 
+ // Enviornoment variable
+ // Values: ['develop', 'production']
+ const ENV = "develop";
