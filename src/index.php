@@ -14,8 +14,7 @@
         
         <link rel="stylesheet" href="./vendor/css/bower.css" type="text/css" />
 
-        <!--JS-->
-        <script src="vendor/js/bower.js"></script>
+
     </head>
 
     <!--BODY-->
