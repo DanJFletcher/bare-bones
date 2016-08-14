@@ -25,8 +25,12 @@
 
         <!--CSS-->
         <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+        
+        <!-- Web Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+        <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
 
 
     </head>
