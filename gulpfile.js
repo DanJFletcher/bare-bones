@@ -41,6 +41,12 @@ gulp.task('compress-js', function() {
     }))
     .pipe(gulp.dest('dist/js'))
 });
+
+// Add JS to Build
+gulp.task('build-js', function() {
+    gulp.src('src/js/*.js')
+    .pipe(gulp.dest('buil/js'));
+})
  
  
 // Put CSS libs in build
