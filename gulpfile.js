@@ -39,7 +39,7 @@ gulp.task('compress-js', function() {
             min:'.min.js'
         }
     }))
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('dist/js'));
 });
 
 // Add JS to Build
