@@ -144,6 +144,7 @@ gulp.task('dist', [
         'dist-images',
         'dist-vendor-css',
         'dist-vendor-js',
+        'compress-js',
         'dist-php'
     ]);
 
@@ -154,5 +155,6 @@ gulp.task('default', [
         'images', 
         'build-vendor-css',
         'build-vendor-js',
+        'build-js',
         'build-php'
     ]);
