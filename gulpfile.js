@@ -32,14 +32,14 @@ var plugins = require("gulp-load-plugins")({
 
 // Minifies JS Files
 gulp.task('compress-js', function() {
-  gulp.src('src/js/*.js')
+  gulp.src('build/js/*.js')
     .pipe(plugins.minify({
         ext:{
             src:'.js',
             min:'.min.js'
         }
     }))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist/js'))
 });
  
  
