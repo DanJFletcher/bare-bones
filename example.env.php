@@ -7,12 +7,12 @@
  * Example: If your running XAMPP, your path might be
  * localhost/projects/beard-pack
  * 
- * More settings will be added here as this beard-pack project develops.
+ * More settings will be added here as this bare-bones project develops.
  */
  
  // The site url
  // Example: http://www.beardreview.ca/familyCentral
- const SITE_URL = "localhost/w-enterprise/beard-pack";
+ const SITE_URL = "localhost/w-enterprise/bare-bones";
  
  // Enviornoment variable
  // Values: ['develop', 'production']
