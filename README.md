@@ -1,5 +1,5 @@
-# bare-bones
-A decent starting point for building static websites.
+# Bare Bones
+A decent starting point for building static websites with PHP.
 
 If you have any questions about this build, issues setting up, or would like to suggest features, please submit an issue through the project's issue tracker.
 
