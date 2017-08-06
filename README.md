@@ -1,13 +1,13 @@
-# beard-pack
+# bare-bones
 A decent starting point for building static websites.
 
 If you have any questions about this build, issues setting up, or would like to suggest features, please submit an issue through the project's issue tracker.
 
 ## The purpose
-This setup handles monotonous tasks such as HTML validation, CSS vendor prefixing, image compression, minification and more. When developing a project with `beard-pack` you will have 3 main directories in your project.  
+This setup handles monotonous tasks such as HTML validation, CSS vendor prefixing, image compression, minification and more. When developing a project with `bare-bones` you will have 3 main directories in your project.  
 
 1. `src` The src directory is where all code edits take place. This is where you will create new files, add assets like icons and images, and everything else you normally do when building a static website.
-2. `build` The build is the result of running a build tool called `gulp`. After things like vendor prefixes, SASS compilation, HTML validation etc has all been done, all of the src files are stored inside of `build` and this is where you will point your server. Example: in XAMPP you'll likely have a path like `localhost/<document_root>/<name_of_project>/build` where `document_root` is the path you configure for XAMPP, and `name_of_project` is the name of your project - which will just be `beard-pack` if you didn't specify a name when running `git clone`.
+2. `build` The build is the result of running a build tool called `gulp`. After things like vendor prefixes, SASS compilation, HTML validation etc has all been done, all of the src files are stored inside of `build` and this is where you will point your server. Example: in XAMPP you'll likely have a path like `localhost/<document_root>/<name_of_project>/build` where `document_root` is the path you configure for XAMPP, and `name_of_project` is the name of your project - which will just be `bare-bones` if you didn't specify a name when running `git clone`.
 3. `dist` Is the result of minifying all source files so that the file sizes are reduced for faster load times. In typical build systems, CSS and JS is often concatenated into a single file - in this setup, CSS is concatenated before being set to the build folder. The contents of `dist` is what gets uploaded to the `public_html` directory on a live production server.
 
 ### Recap
@@ -26,8 +26,8 @@ You will need the following installed on your local machine:
 
 ### tl;dr
 #### On Node
-1. `git clone https://DanJFletcher@bitbucket.org/reddingdesigns/beard-pack.git <name-of-project>`
-2. `cd beard-pack`
+1. `git clone https://DanJFletcher@bitbucket.org/reddingdesigns/bare-bones.git <name-of-project>`
+2. `cd bare-bones`
 3. `npm install`
 4. `gulp watch`    
 5. (For Node)  
@@ -39,9 +39,9 @@ Start server and visit your localhost at your document_root. If it's not set, it
 
 ### Detailed Steps
 1. Open terminal and `cd` to where you wish to create the projects' directory.
-2. Then run `git clone https://DanJFletcher@bitbucket.org/reddingdesigns/beard-pack.git`
+2. Then run `git clone https://DanJFletcher@bitbucket.org/reddingdesigns/bare-bones.git`
 Optionally, you can change the name of the target directory by appending a custom name to the end of the command like this:
-`git clone https://DanJFletcher@bitbucket.org/reddingdesigns/beard-pack.git my-project-name`
+`git clone https://DanJFletcher@bitbucket.org/reddingdesigns/bare-bones.git my-project-name`
 3. `cd my-project-name`
 4. Install dependencies. This is why you need npm. It's included by default with Node. All you have to do is run `npm install`
 5. Now run `npm start`. This will start up a node server at `http://localhost:8080` on your computer. Visit that URL to view the project.
