@@ -7,7 +7,7 @@
 // Autobuild on file saves with: gulp watch
 // Watch tasks are used to update file changes,
 // and will be ran automatically.
-// use `ctrl+c` to quit the watch task.
+// use `ctrl+c` or `cmd+c` to quit the watch task.
 
 // To build the dist folder use the command: gulp dist
 // This will run minification processes and render the code
